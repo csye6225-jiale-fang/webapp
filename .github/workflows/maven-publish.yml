@@ -22,3 +22,7 @@ jobs:
 
       - name: Compile with Maven
         run: mvn -B compile --file pom.xml -Djasypt.encryptor.password=${{ secrets.JasyptEncryptionKey }}
+
+      # Test failure
+      - name: Fail the workflow
+        run: exit 1
