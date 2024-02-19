@@ -35,7 +35,7 @@ class HealthCheckApplicationTests {
                 .contentType(ContentType.JSON)
                 .auth()
                 .preemptive()
-                .basic("fjl@example.com", "123456")
+                .basic("fjl@example.com", "123")
                 .when()
                 .get("/v1/user/self")
                 .then()
